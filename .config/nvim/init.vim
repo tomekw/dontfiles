@@ -19,6 +19,8 @@ let g:rainbow_active = 1
 Plug 'mileszs/ack.vim'
 let g:ackprg = 'ag --vimgrep'
 
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+
 call plug#end()
 
 set number
