@@ -5,3 +5,5 @@
 !.gitignore-global
 
 !README.md
+
+!.config/nvim/init.vim
