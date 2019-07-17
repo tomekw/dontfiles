@@ -9,3 +9,5 @@
 !.config/fish/config.fish
 
 !.config/nvim/init.vim
+
+!Brewfile

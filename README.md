@@ -8,15 +8,6 @@
 	$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	```
 
-1. Install packages
-	```bash
-	$ brew cask install adoptopenjdk11 firefox jetbrains-toolbox karabiner-elements keybase
-	```
-
-	```bash
-	$ brew install clojure fish git neovim the_silver_searcher
-	```
-
 1. Install vim-plug
 	```bash
 	$ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -31,6 +22,11 @@
 1. For a new machine
 	```bash
 	$ git clone --bare git@github.com:tomekw/dontfiles.git ~/dontfiles
+	```
+
+1. Install packages
+	```bash
+	$ brew bundle install
 	```
 
 Also see: http://www.gmarik.info/blog/2010/tracking-dotfiles-with-git
