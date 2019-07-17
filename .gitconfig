@@ -1,0 +1,17 @@
+[user]
+	name = Tomek Wałkuski
+	email = contact@tomekw.com
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	lg = log -p
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[core]
+	excludesfile = /Users/tomek/.gitignore-global
+	editor = /usr/local/bin/nvim
