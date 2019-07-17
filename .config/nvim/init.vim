@@ -21,6 +21,8 @@ let g:ackprg = 'ag --vimgrep'
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
+Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
 set number
