@@ -10,4 +10,6 @@
 
 !.config/nvim/init.vim
 
+!.config/kitty/kitty.conf
+
 !Brewfile
