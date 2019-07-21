@@ -27,6 +27,7 @@ call plug#end()
 
 set number
 set mouse=a
+set termguicolors
 
 let mapleader = ','
 let maplocalleader = ','
