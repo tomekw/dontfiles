@@ -23,6 +23,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 Plug 'vim-airline/vim-airline'
 
+Plug 'mustache/vim-mustache-handlebars'
+
 call plug#end()
 
 set number
