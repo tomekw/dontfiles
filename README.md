@@ -1,56 +1,22 @@
 # Dontfiles
 
-## How to setup
+## How to install on a new machine
 
-1. Install Homebrew
-	```bash
-	$ xcode-select --install
-	$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	```
-
-1. Setup alias
-	```bash
-	$ alias dfgit="git --work-tree=$HOME/ --git-dir=$HOME/dontfiles"
-	```
-
-1. Install vim-plug
-	```bash
-	$ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-	```
-
-1. For a completely new setup
-	```bash
-	$ git init --bare ~/dontfiles
-	```
-
-1. For a new machine
+1. Clone repository
 	```bash
 	$ git clone --bare git@github.com:tomekw/dontfiles.git ~/dontfiles
 	```
-
 1. Pull all changes
 	```bash
-	$ dfgit co -f master
+	$ git --work-tree=$HOME/ --git-dir=$HOME/dontfiles checkout -f master
 	```
-
-1. Install packages
+1. Run the installation script
 	```bash
-	$ brew bundle install
-	$ pip3 install --user pynvim
+	$ $HOME/bin/dontfiles-install.sh
 	```
 
-1. Switch to Fish shell
-	```bash
-	$ echo /usr/local/bin/fish | sudo tee -a /etc/shells
-	$ chsh -s /usr/local/bin/fish
-	```
-
-Also see: http://www.gmarik.info/blog/2010/tracking-dotfiles-with-git
-
-## How to use / some commands
+## How to setup the repository
 ```bash
-$ dfgit st
-$ dfgit ci -am "New change"
-$ dfgit push origin master
-$ dfgit pull
+$ git init --bare ~/dontfiles
 ```
+See: http://www.gmarik.info/blog/2010/tracking-dotfiles-with-git
