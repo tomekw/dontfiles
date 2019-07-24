@@ -30,7 +30,6 @@ call plug#end()
 set number
 set mouse=a
 set termguicolors
-set expandtab
 
 autocmd FileType html setlocal expandtab shiftwidth=4 softtabstop=4
 autocmd FileType html.handlebars setlocal expandtab shiftwidth=4 softtabstop=4
