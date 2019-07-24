@@ -30,10 +30,10 @@ call plug#end()
 set number
 set mouse=a
 set termguicolors
-
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+
+autocmd FileType html setlocal expandtab shiftwidth=4 softtabstop=4
+autocmd FileType html.handlebars setlocal expandtab shiftwidth=4 softtabstop=4
 
 let mapleader = ','
 let maplocalleader = ','
