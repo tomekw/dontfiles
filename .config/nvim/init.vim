@@ -31,6 +31,10 @@ set number
 set mouse=a
 set termguicolors
 
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
 let mapleader = ','
 let maplocalleader = ','
 
