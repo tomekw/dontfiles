@@ -25,14 +25,18 @@ Plug 'vim-airline/vim-airline'
 
 Plug 'mustache/vim-mustache-handlebars'
 
+Plug 'mrk21/yaml-vim'
+
 call plug#end()
 
 set number
 set mouse=a
 set termguicolors
 
-autocmd FileType html setlocal expandtab shiftwidth=4 softtabstop=4
-autocmd FileType html.handlebars setlocal expandtab shiftwidth=4 softtabstop=4
+autocmd FileType html setlocal expandtab sw=4 sts=4
+autocmd FileType html.handlebars setlocal expandtab sw=4 sts=4
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 let mapleader = ','
 let maplocalleader = ','
