@@ -11,7 +11,7 @@ Plug 'romainl/Apprentice'
 
 Plug 'bhurlow/vim-parinfer'
 
-Plug 'Olical/conjure', { 'tag': 'v2.0.0', 'do': 'bin/compile' }
+Plug 'Olical/conjure', { 'tag': 'v2.1.1', 'do': 'bin/compile' }
 
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1
