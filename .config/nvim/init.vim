@@ -33,6 +33,10 @@ set number
 set mouse=a
 set termguicolors
 
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 autocmd FileType html setlocal expandtab sw=4 sts=4
 autocmd FileType html.handlebars setlocal expandtab sw=4 sts=4
 
