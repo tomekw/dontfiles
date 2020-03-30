@@ -4,7 +4,8 @@
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Java is needed for other packages, like "clojure"
-brew cask install adoptopenjdk
+brew tap adoptopenjdk/openjdk
+brew cask install adoptopenjdk14
 
 # Install packages
 brew bundle install
