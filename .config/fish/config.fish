@@ -6,3 +6,4 @@ alias dfgit="git --work-tree=$HOME/ --git-dir=$HOME/dontfiles"
 alias vim="nvim"
 alias dc="docker-compose"
 alias dcr="docker-compose run --rm app"
+set -g fish_user_paths "/usr/local/opt/node@12/bin" $fish_user_paths
