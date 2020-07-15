@@ -13,6 +13,7 @@ brew "leiningen"
 brew "neovim"
 brew "node@12"
 brew "python@3.8", link: false
+brew "terraform"
 brew "the_silver_searcher"
 brew "heroku/brew/heroku"
 cask "1password"
