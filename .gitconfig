@@ -15,3 +15,5 @@
 [core]
 	excludesfile = /Users/tomek/.gitignore-global
 	editor = /usr/local/bin/nvim
+[pull]
+	rebase = true
