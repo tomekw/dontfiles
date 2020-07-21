@@ -12,6 +12,8 @@
 
 !.config/kitty/kitty.conf
 
+!.ssh/config
+
 !Brewfile
 
 !bin/dontfiles-install.sh
