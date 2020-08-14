@@ -12,6 +12,8 @@
 
 !.config/kitty/kitty.conf
 
+!.emacs.d/init.el
+
 !.ssh/config
 
 !Brewfile
