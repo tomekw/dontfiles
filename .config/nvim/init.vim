@@ -1,54 +1,46 @@
 call plug#begin()
 
-Plug 'tpope/vim-sensible'
-
-Plug 'kien/ctrlp.vim'
-
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 let g:deoplete#enable_at_startup = 1
 
-Plug 'romainl/Apprentice'
+Plug 'clojure-vim/vim-jack-in'
+Plug 'ctrlpvim/ctrlp.vim'
+let g:ctrlp_root_markers = ['deps.edn']
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
-Plug 'bhurlow/vim-parinfer'
-
-Plug 'Olical/conjure', { 'tag': 'v2.1.1', 'do': 'bin/compile' }
-
+Plug 'guns/vim-clojure-highlight'
+Plug 'guns/vim-clojure-static'
+Plug 'guns/vim-sexp'
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1
 
 Plug 'mileszs/ack.vim'
 let g:ackprg = 'ag --vimgrep'
 
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'mrk21/yaml-vim'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'radenling/vim-dispatch-neovim'
+Plug 'romainl/Apprentice'
+Plug 'terryma/vim-expand-region'
+map <M-Down> <Plug>(expand_region_shrink)
+map <M-Up> <Plug>(expand_region_expand)
 
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'vim-airline/vim-airline'
 
-Plug 'mustache/vim-mustache-handlebars'
-
-Plug 'mrk21/yaml-vim'
-
 call plug#end()
-
-set number
-set mouse=a
-set termguicolors
-
-set tabstop=4
-set shiftwidth=4
-set expandtab
-
-autocmd FileType html setlocal expandtab sw=4 sts=4
-autocmd FileType html.handlebars setlocal expandtab sw=4 sts=4
-
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-
-let mapleader = ','
-let maplocalleader = ','
-
-map <leader>o :CtrlP<CR>
-map <leader>r :CtrlPMixed<CR>
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
 colorscheme apprentice
+
+let mapleader = ','
+let maplocalleader = ','
+
+set number
+set mouse=a
+set termguicolors
