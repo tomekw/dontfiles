@@ -1,5 +1,6 @@
 call plug#begin()
 
+Plug 'axelf4/vim-strip-trailing-whitespace'
 Plug 'clojure-vim/async-clj-omni'
 Plug 'clojure-vim/vim-jack-in'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -54,9 +55,6 @@ let g:rainbow_active = 1
 " vim-expand-region
 map <M-Down> <Plug>(expand_region_shrink)
 map <M-Up> <Plug>(expand_region_expand)
-
-" Remove trailing whitespace on save
-autocmd BufWritePre * :%s/\s\+$//e
 
 colorscheme apprentice
 
