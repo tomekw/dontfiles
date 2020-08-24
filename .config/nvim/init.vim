@@ -14,6 +14,7 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'radenling/vim-dispatch-neovim'
 Plug 'romainl/Apprentice'
+Plug 'SevereOverfl0w/vim-replant', { 'do': ':UpdateRemotePlugins' }
 Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fireplace'
