@@ -24,7 +24,9 @@ Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " ack.vim
-let g:ackprg = 'ag --vimgrep'
+let g:ackprg = 'rg --vimgrep'
+let g:ack_autoclose = 1
+cnoreabbrev Ack Ack!
 
 " asyncomplete.vim + async-clj-omni
 au User asyncomplete_setup call asyncomplete#register_source({
