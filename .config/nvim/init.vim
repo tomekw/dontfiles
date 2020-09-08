@@ -18,6 +18,7 @@ Plug 'SevereOverfl0w/vim-replant', { 'do': ':UpdateRemotePlugins' }
 Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'vim-airline/vim-airline'
