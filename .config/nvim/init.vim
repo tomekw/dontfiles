@@ -4,6 +4,7 @@ Plug 'axelf4/vim-strip-trailing-whitespace'
 Plug 'clojure-vim/async-clj-omni'
 Plug 'clojure-vim/vim-jack-in'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dense-analysis/ale'
 Plug 'guns/vim-clojure-highlight'
 Plug 'guns/vim-clojure-static'
 Plug 'guns/vim-sexp'
@@ -29,6 +30,9 @@ call plug#end()
 let g:ackprg = 'rg --vimgrep'
 let g:ack_autoclose = 1
 cnoreabbrev Ack Ack!
+
+" ale
+let g:ale_linters = {'clojure': ['clj-kondo']}
 
 " asyncomplete.vim + async-clj-omni
 au User asyncomplete_setup call asyncomplete#register_source({
