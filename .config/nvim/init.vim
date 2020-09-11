@@ -64,6 +64,14 @@ let g:rainbow_active = 1
 map <M-Down> <Plug>(expand_region_shrink)
 map <M-Up> <Plug>(expand_region_expand)
 
+" vim-fugitive
+cnoreabbrev gbr Git branch
+cnoreabbrev gci Git commit
+cnoreabbrev gco Git checkout
+cnoreabbrev gdi Git diff
+cnoreabbrev glg Git log -p
+cnoreabbrev gst Git status
+
 colorscheme apprentice
 
 let mapleader = ','
