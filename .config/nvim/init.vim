@@ -40,7 +40,7 @@ au User asyncomplete_setup call asyncomplete#register_source({
     \ 'whitelist': ['clojure'],
     \ 'completor': function('async_clj_omni#sources#complete'),
     \ })
-let g:asyncomplete_auto_popup = 1
+let g:asyncomplete_auto_popup = 0
 
 function! s:check_back_space() abort
     let col = col('.') - 1
