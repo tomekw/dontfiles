@@ -16,6 +16,8 @@
 
 !.ssh/config
 
+!.tmux.conf
+
 !Brewfile
 
 !bin/dontfiles-install.sh
