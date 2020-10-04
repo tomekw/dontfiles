@@ -18,6 +18,7 @@ Plug 'romainl/Apprentice'
 Plug 'SevereOverfl0w/vim-replant', { 'do': ':UpdateRemotePlugins' }
 Plug 'terryma/vim-expand-region'
 Plug 'tmux-plugins/vim-tmux'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-fugitive'
