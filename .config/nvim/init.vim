@@ -1,5 +1,6 @@
 call plug#begin()
 
+Plug 'airblade/vim-gitgutter'
 Plug 'axelf4/vim-strip-trailing-whitespace'
 Plug 'clojure-vim/async-clj-omni'
 Plug 'clojure-vim/vim-jack-in'
@@ -78,6 +79,9 @@ cnoreabbrev gco Git checkout
 cnoreabbrev gdi Git diff
 cnoreabbrev glg Git log -p
 cnoreabbrev gst Git status
+
+" vim-gitgutter
+set updatetime=100
 
 colorscheme apprentice
 
