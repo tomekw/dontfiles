@@ -12,6 +12,7 @@ Plug 'luochen1990/rainbow'
 Plug 'mileszs/ack.vim'
 Plug 'mrk21/yaml-vim'
 Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'preservim/nerdtree'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'radenling/vim-dispatch-neovim'
 Plug 'romainl/Apprentice'
@@ -59,6 +60,9 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 " ctrlp.vim
 let g:ctrlp_root_markers = ['deps.edn']
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" nerdtree
+map <C-n> :NERDTreeToggle<CR>
 
 " rainbow
 let g:rainbow_active = 1
