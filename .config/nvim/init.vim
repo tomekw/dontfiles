@@ -9,6 +9,7 @@ Plug 'dense-analysis/ale'
 Plug 'guns/vim-clojure-highlight'
 Plug 'guns/vim-clojure-static'
 Plug 'guns/vim-sexp'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'luochen1990/rainbow'
 Plug 'mileszs/ack.vim'
 Plug 'mrk21/yaml-vim'
@@ -84,12 +85,14 @@ cnoreabbrev gst Git status
 " vim-gitgutter
 set updatetime=100
 
+" vim-numbertoggle
+set number relativenumber
+
 colorscheme apprentice
 
 let mapleader = ','
 let maplocalleader = ','
 
-set number
 set mouse=a
 set termguicolors
 
