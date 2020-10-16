@@ -14,6 +14,7 @@ Plug 'luochen1990/rainbow'
 Plug 'mileszs/ack.vim'
 Plug 'mrk21/yaml-vim'
 Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-buffer.vim'
 Plug 'preservim/nerdtree'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'radenling/vim-dispatch-neovim'
@@ -47,6 +48,15 @@ au User asyncomplete_setup call asyncomplete#register_source({
     \ 'whitelist': ['clojure'],
     \ 'completor': function('async_clj_omni#sources#complete'),
     \ })
+call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
+    \ 'name': 'buffer',
+    \ 'allowlist': ['*'],
+    \ 'completor': function('asyncomplete#sources#buffer#completor'),
+    \ 'config': {
+    \    'max_buffer_size': 5000000,
+    \  },
+    \ }))
+
 let g:asyncomplete_auto_popup = 0
 
 function! s:check_back_space() abort
