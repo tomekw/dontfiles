@@ -6,7 +6,6 @@ Plug 'clojure-vim/async-clj-omni'
 Plug 'clojure-vim/vim-jack-in'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
-Plug 'eraserhd/parinfer-rust', {'do': 'cargo build --release'}
 Plug 'guns/vim-clojure-highlight'
 Plug 'guns/vim-clojure-static'
 Plug 'guns/vim-sexp'
@@ -76,9 +75,6 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
-
-" parinfer
-let g:parinfer_mode = 'paren'
 
 " rainbow
 let g:rainbow_active = 1
