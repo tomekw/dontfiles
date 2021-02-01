@@ -10,6 +10,7 @@ sudo apt install \
   apt-transport-https \
   arc-theme \
   containerd.io \
+  cups \
   docker-ce \
   docker-ce-cli \
   ca-certificates \
