@@ -19,6 +19,7 @@ sudo apt install \
   ca-certificates \
   curl \
   firmware-amd-graphics \
+  firmware-iwlwifi \
   fish \
   gnome-shell-extension-dash-to-panel \
   gnupg-agent \
