@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# Prepare Docker
-# curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-# sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian buster stable"
-
 sudo apt update
 sudo apt upgrade
 sudo apt install \
+  containerd.io \
   curl \
+  docker-ce \
+  docker-ce-cli \
   firefox-esr \
   firmware-amd-graphics \
   firmware-iwlwifi \
@@ -47,12 +46,12 @@ sudo ./linux-install-1.10.2.774.sh
 cd ~
 
 # Configure Docker
-# sudo usermod -aG docker $(whoami)
-# sudo systemctl enable docker.service
-# sudo systemctl enable containerd.service
+sudo usermod -aG docker $(whoami)
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
 
-# sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-# sudo chmod +x /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 
 # Install JetBrains fonts
 cd /tmp

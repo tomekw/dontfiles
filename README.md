@@ -28,10 +28,18 @@
 ## Additional steps
 
 1. Add Buster repo to install Slack
+  ```bash
+  deb http://deb.debian.org/debian/ buster main
+  ```
 
-```bash
-deb http://deb.debian.org/debian/ buster main
-```
+1. Add Docker repo
+  ```bash
+  $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+  ```
+
+  ```bash
+  deb https://download.docker.com/linux/debian buster stable
+  ```
 
 ## Usage
 
