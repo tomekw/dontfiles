@@ -40,11 +40,11 @@ curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --c
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install Clojure
-# cd /tmp
-# curl -O https://download.clojure.org/install/linux-install-1.10.2.774.sh
-# chmod +x linux-install-1.10.2.774.sh
-# sudo ./linux-install-1.10.2.774.sh
-# cd ~
+cd /tmp
+curl -O https://download.clojure.org/install/linux-install-1.10.2.774.sh
+chmod +x linux-install-1.10.2.774.sh
+sudo ./linux-install-1.10.2.774.sh
+cd ~
 
 # Configure Docker
 # sudo usermod -aG docker $(whoami)
