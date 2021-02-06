@@ -65,6 +65,15 @@ cd ~
 cd /tmp
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.12.2-amd64.deb
 sudo apt install ./slack-desktop-4.12.2-amd64.deb
+rm slack-desktop-4.12.2-amd64.deb
+cd ~
+
+# Install clj-kondo
+cd /tmp
+curl -sLO https://raw.githubusercontent.com/clj-kondo/clj-kondo/master/script/install-clj-kondo
+chmod +x install-clj-kondo
+sudo ./install-clj-kondo
+rm install-clj-kondo
 cd ~
 
 # Switch to Fish shell
