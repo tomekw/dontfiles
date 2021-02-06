@@ -21,8 +21,17 @@
 	```
 1. Run the installation script
 	```bash
-	$ $HOME/bin/dontfiles-install.sh
+  $ $HOME/bin/dontfiles-install.sh
+  $ $HOME/bin/install-debian.sh
 	```
+
+## Additional steps
+
+1. Add Buster repo to install Slack
+
+```bash
+deb http://deb.debian.org/debian/ buster main
+```
 
 ## Usage
 

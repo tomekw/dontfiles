@@ -207,6 +207,4 @@ bar {
     }
 }
 
-xwayland disable
-
 include /etc/sway/config.d/*

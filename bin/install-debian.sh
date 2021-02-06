@@ -4,9 +4,6 @@
 # curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 # sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian buster stable"
 
-# Add Buster repo
-# sudo add-apt-repository "deb deb http://ftp.pl.debian.org/debian/ buster main"
-
 sudo apt update
 sudo apt upgrade
 sudo apt install \
@@ -33,6 +30,7 @@ sudo apt install \
   urlview \
   waybar \
   wofi \
+  xwayland \
   zip
 
 mkdir -p ~/depot/personal
@@ -65,10 +63,10 @@ rm JetBrainsMono-2.225.zip
 cd ~
 
 # Install Slack
-# cd /tmp
-# wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.12.2-amd64.deb
-# sudo apt install ./slack-desktop-4.12.2-amd64.deb
-# cd ~
+cd /tmp
+wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.12.2-amd64.deb
+sudo apt install ./slack-desktop-4.12.2-amd64.deb
+cd ~
 
 # Switch to Fish shell
 chsh -s /usr/bin/fish
