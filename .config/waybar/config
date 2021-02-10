@@ -1,0 +1,25 @@
+{
+  "layer": "top",
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["network#wifi", "custom/clock"],
+    "custom/clock": {
+      "exec": "date +'%Y-%m-%d %H:%M:%S'",
+      "interval": 1
+    },
+    "network#wifi": {
+      "interface": "wlan0",
+      "format-wifi": "{essid} ({signalStrength}%)",
+      "tooltip-format": "{ipaddr}"
+    },
+    "pulseaudio": {
+      "scroll-step": 1,
+      "format": "{icon} {volume}%{format_source}",
+      "format-muted": "{format_source}",
+      "format-source": "{volume}%",
+      "on-click": "pavucontrol"
+    },
+    "sway/window": {
+      "max-length": 50
+    },
+}

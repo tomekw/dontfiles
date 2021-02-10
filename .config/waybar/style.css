@@ -1,0 +1,43 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-size: 12px;
+  min-height: 24px;
+}
+
+window#waybar {
+  background: #222;
+  border-bottom: 1px solid #000;
+  color: white;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  background: transparent;
+  color: white;
+  border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+  background: #444;
+  border-bottom: 3px solid white;
+}
+
+#custom-clock,
+#mode,
+#network.wifi {
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+#mode {
+  background: #444;
+  border-bottom: 3px solid white;
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: black;
+  }
+}
