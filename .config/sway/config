@@ -13,7 +13,7 @@ set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --show run | xargs swaymsg exec --
+set $menu PATH=~/.local/share/tresorit:$PATH wofi --show run | xargs swaymsg exec --
 
 include /etc/sway/config-vars.d/*
 
@@ -23,7 +23,7 @@ output * \
   res 2560x1440@165.080002Hz \
   adaptive_sync on \
   max_render_time 1 \
-  bg /home/tomek/Pictures/Wallpapers/surface_laptop_3_4k.jpg fill
+  bg ~/Pictures/Wallpapers/surface_laptop_3_4k.jpg fill
 
 ### Idle configuration
 #
@@ -58,10 +58,8 @@ input "type:keyboard" {
     bindsym $mod+d exec $menu
 
     # Screenshots
-    bindsym Mod4+p       exec grimshot save active
     bindsym Mod4+Shift+p exec grimshot save area
-    bindsym Mod4+Mod1+p  exec grimshot save output
-    bindsym Mod4+Ctrl+p  exec grimshot save window
+    bindsym Mod4+Mod1+p  exec grimshot copy area
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

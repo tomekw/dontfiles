@@ -1,0 +1,11 @@
+[Unit]
+Description=Start Tresorit Daemon
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/home/tomek/.local/share/tresorit/tresorit-cli start
+ExecStop=pidof tresorit-daemon | xargs kill
+
+[Install]
+WantedBy=multi-user.target

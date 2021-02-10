@@ -3,7 +3,6 @@
 sudo apt update
 sudo apt upgrade
 sudo apt install \
-  blueman \
   containerd.io \
   curl \
   docker-ce \
@@ -31,6 +30,7 @@ sudo apt install \
   unzip \
   urlview \
   waybar \
+  wf-recorder \
   wofi \
   xwayland \
   zip
@@ -81,6 +81,3 @@ cd ~
 
 # Switch to Fish shell
 chsh -s /usr/bin/fish
-
-# Make Bluetooth discoverable
-sudo dbus-send --system --dest=org.bluez /org/bluez/hci0 org.bluez.Adapter.SetMode string:discoverable
