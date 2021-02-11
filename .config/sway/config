@@ -71,7 +71,7 @@ input "type:keyboard" {
     # Reload the configuration file
     bindsym $mod+Shift+c reload
 
-    bindsym $mod+Shift+e exec $HOME/.config/sway/scripts/power.sh
+    bindsym $mod+Shift+e exec wlogout -b 2
 #
 # Moving around:
 #

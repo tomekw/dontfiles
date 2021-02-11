@@ -31,6 +31,7 @@ sudo apt install \
   urlview \
   waybar \
   wf-recorder \
+  wlogout \
   wofi \
   xwayland \
   zip
