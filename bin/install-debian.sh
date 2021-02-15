@@ -11,9 +11,11 @@ sudo apt install \
   firmware-amd-graphics \
   firmware-iwlwifi \
   fish \
+  fonts-jetbrains-mono \
   grimshot \
   kitty \
   nautilus \
+  nautilus-dropbox \
   neofetch \
   neovim \
   npm \
@@ -30,6 +32,7 @@ sudo apt install \
   unzip \
   urlview \
   waybar \
+  wev \
   wf-recorder \
   wlogout \
   wofi \
@@ -56,14 +59,6 @@ sudo systemctl enable containerd.service
 
 sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
-
-# Install JetBrains fonts
-cd /tmp
-wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
-sudo unzip JetBrainsMono-2.225.zip -d /usr/share
-sudo fc-cache -f -v
-rm JetBrainsMono-2.225.zip
-cd ~
 
 # Install Slack
 cd /tmp
