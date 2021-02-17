@@ -13,7 +13,7 @@ set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu PATH=~/.local/share/tresorit:$PATH wofi --show run | xargs swaymsg exec --
+set $menu wofi --show run | xargs swaymsg exec --
 
 include /etc/sway/config-vars.d/*
 
@@ -24,6 +24,8 @@ output * \
   adaptive_sync on \
   max_render_time 1 \
   bg ~/Pictures/Wallpapers/surface_laptop_3_4k.jpg fill
+
+gaps inner 4
 
 ### Idle configuration
 #
@@ -58,8 +60,8 @@ input "type:keyboard" {
     bindsym $mod+d exec $menu
 
     # Screenshots
-    bindsym Mod4+Shift+p exec grimshot save area
-    bindsym Mod4+Mod1+p  exec grimshot copy area
+    bindsym $mod+Shift+p exec grimshot save area
+    bindsym $mod+Mod1+p  exec grimshot copy area
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -72,6 +74,10 @@ input "type:keyboard" {
     bindsym $mod+Shift+c reload
 
     bindsym $mod+Shift+e exec wlogout -b 2
+
+    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 #
 # Moving around:
 #

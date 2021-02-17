@@ -35,6 +35,7 @@ sudo apt install \
   wev \
   wf-recorder \
   wlogout \
+  wob \
   wofi \
   xwayland \
   zip
