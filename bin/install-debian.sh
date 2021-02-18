@@ -63,9 +63,9 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 # Install Slack
 cd /tmp
-wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.12.2-amd64.deb
-sudo apt install ./slack-desktop-4.12.2-amd64.deb
-rm slack-desktop-4.12.2-amd64.deb
+wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.13.0-amd64.deb
+sudo apt install ./slack-desktop-4.13.0-amd64.deb
+rm slack-desktop-4.13.0-amd64.deb
 cd ~
 
 # Install clj-kondo
