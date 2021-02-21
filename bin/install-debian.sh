@@ -3,6 +3,7 @@
 sudo apt update
 sudo apt upgrade
 sudo apt install \
+  amd64-microcode \
   containerd.io \
   curl \
   docker-ce \
