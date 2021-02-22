@@ -15,6 +15,7 @@ sudo apt install \
   fonts-jetbrains-mono \
   grimshot \
   kitty \
+  mpv \
   nautilus \
   nautilus-dropbox \
   neofetch \
