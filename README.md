@@ -21,8 +21,8 @@
 	```
 1. Run the installation script
 	```bash
-  $ $HOME/bin/dontfiles-install.sh
-  $ $HOME/bin/install-debian.sh
+  $ $HOME/bin/macos.sh
+  $ $HOME/bin/debian.sh
 	```
 
 ## Additional steps
