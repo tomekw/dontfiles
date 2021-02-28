@@ -8,7 +8,7 @@
       "interval": 1
     },
     "network#wifi": {
-      "interface": "wlan0",
+      "interface": "wlp6s0",
       "format-wifi": "{essid} ({signalStrength}%)",
       "tooltip-format": "{ipaddr}"
     },
