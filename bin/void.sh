@@ -2,7 +2,11 @@
 
 sudo xbps-install -Su
 sudo xbps-install \
+  avahi \
+  aws-cli \
+  chrony \
   clojure \
+  cups \
   curl \
   dbus-elogind \
   dbus-elogind-libs \
@@ -10,9 +14,13 @@ sudo xbps-install \
   dejavu-fonts-ttf \
   docker \
   docker-compose \
+  emacs-gtk3 \
+  evince \
+  ffmpeg \
   firefox \
   firefox-i18n-en-GB \
   fish-shell \
+  font-awesome5 \
   git \
   grimshot \
   kitty \
@@ -26,17 +34,22 @@ sudo xbps-install \
   neofetch \
   neovim \
   nodejs \
+  pamixer \
   pavucontrol \
   polkit-elogind \
   pulseaudio \
+  python3-neovim \
   ripgrep \
   sway \
   swayidle \
   swaylock \
+  telegram-desktop \
   tmux \
+  unzip \
   urlview \
   Waybar \
   wf-recorder \
+  wget \
   wlogout \
   wob \
   wofi
