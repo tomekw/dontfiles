@@ -199,3 +199,7 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+exec pipewire
+exec pipewire-pulse
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway

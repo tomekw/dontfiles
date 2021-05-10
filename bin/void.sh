@@ -36,6 +36,7 @@ sudo xbps-install \
   nodejs \
   pamixer \
   pavucontrol \
+  pipewire \
   polkit-elogind \
   pulseaudio \
   python3-neovim \
@@ -52,7 +53,9 @@ sudo xbps-install \
   wget \
   wlogout \
   wob \
-  wofi
+  wofi \
+  xdg-desktop-portal-wlr \
+  zip
 
 # TODO: Enable services: dbus, dhcpcd, elogind, wpa_supplicant, polkitd, others...
 
