@@ -22,6 +22,7 @@ sudo xbps-install \
   fish-shell \
   font-awesome5 \
   git \
+  gnome-calculator \
   grimshot \
   kitty \
   liberation-fonts-ttf \
