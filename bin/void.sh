@@ -46,6 +46,7 @@ sudo xbps-install \
   swayidle \
   swaylock \
   telegram-desktop \
+  ttf-material-icons \
   tmux \
   unzip \
   urlview \
