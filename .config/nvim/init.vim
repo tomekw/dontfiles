@@ -13,6 +13,7 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'luochen1990/rainbow'
 Plug 'mileszs/ack.vim'
 Plug 'mrk21/yaml-vim'
+" Plug 'Olical/conjure'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-buffer.vim'
 Plug 'preservim/nerdtree'
@@ -29,6 +30,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'venantius/vim-cljfmt'
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
@@ -68,6 +70,9 @@ inoremap <silent><expr> <TAB>
   \ <SID>check_back_space() ? "\<TAB>" :
   \ asyncomplete#force_refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+" conjure
+" let g:conjure#eval#gsubs = {'do-comment': ['^%(comment[%s%c]', '(do ']}
 
 " ctrlp.vim
 let g:ctrlp_root_markers = ['deps.edn']
