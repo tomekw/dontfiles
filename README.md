@@ -21,8 +21,9 @@
 	```
 1. Run the installation script
 	```bash
-  $ $HOME/bin/macos.sh
-  $ $HOME/bin/debian.sh
+  	$ $HOME/bin/macos.sh
+  	$ $HOME/bin/debian.sh
+	$ $HOME/bin/void.sh
 	```
 
 ## Additional steps
