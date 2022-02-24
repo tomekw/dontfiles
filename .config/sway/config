@@ -27,6 +27,8 @@ output * \
 
 gaps inner 4
 
+font pango:Noto Sans Mono 10
+
 ### Idle configuration
 #
 # Example configuration:

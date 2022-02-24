@@ -17,3 +17,5 @@
 	editor = /usr/bin/nvim
 [pull]
 	rebase = true
+[init]
+	defaultBranch = main

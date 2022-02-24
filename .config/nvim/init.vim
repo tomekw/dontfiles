@@ -21,6 +21,7 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'radenling/vim-dispatch-neovim'
 Plug 'romainl/Apprentice'
 Plug 'SevereOverfl0w/vim-replant', { 'do': ':UpdateRemotePlugins' }
+Plug 'thecontinium/asyncomplete-conjure.vim'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'tpope/vim-commentary'
@@ -32,6 +33,7 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'venantius/vim-cljfmt'
 Plug 'vim-airline/vim-airline'
+Plug 'wlangstroth/vim-racket'
 
 call plug#end()
 
@@ -45,10 +47,17 @@ let g:ale_linters = {'clojure': ['clj-kondo']}
 
 " asyncomplete.vim + async-clj-omni
 au User asyncomplete_setup call asyncomplete#register_source({
-    \ 'name': 'async_clj_omni',
-    \ 'whitelist': ['clojure'],
-    \ 'completor': function('async_clj_omni#sources#complete'),
-    \ })
+   \ 'name': 'async_clj_omni',
+   \ 'whitelist': ['clojure'],
+   \ 'completor': function('async_clj_omni#sources#complete'),
+   \ })
+" au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#conjure#get_source_options({
+"    \ 'name': 'conjure',
+"    \ 'allowlist': ['clojure'],
+"    \ 'triggers': {'*': ['/']},
+"    \ 'time': 20,
+"    \ 'completor': function('asyncomplete#sources#conjure#completor'),
+"    \ }))
 call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
     \ 'name': 'buffer',
     \ 'allowlist': ['*'],
