@@ -1,5 +1,5 @@
 set -gx EDITOR nvim
-set -gx PATH ~/bin ~/.emacs.d/bin /usr/local/bin /usr/bin /bin
+set -gx PATH ~/bin ~/.emacs.d/bin /usr/local/opt/sqlite/bin /usr/local/opt/node@16/bin /usr/local/bin /usr/bin /bin /usr/sbin /sbin
 set -gx MOZ_ENABLE_WAYLAND 1
 
 alias dfgit="git --work-tree=$HOME/ --git-dir=$HOME/dontfiles"
