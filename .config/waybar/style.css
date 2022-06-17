@@ -24,6 +24,8 @@ window#waybar {
 }
 
 #custom-clock,
+#custom-weather,
+#pulseaudio,
 #mode,
 #network.wifi {
   padding: 0 5px;

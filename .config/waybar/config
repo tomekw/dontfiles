@@ -2,10 +2,14 @@
   "layer": "top",
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["sway/window"],
-    "modules-right": ["network#wifi", "custom/clock"],
+    "modules-right": ["custom/weather", "pulseaudio", "network#wifi", "custom/clock"],
     "custom/clock": {
       "exec": "date +'%Y-%m-%d %H:%M:%S'",
       "interval": 1
+    },
+    "custom/weather": {
+      "exec": "curl 'https://wttr.in/?format=1'",
+      "interval": 3600
     },
     "network#wifi": {
       "interface": "wlp6s0",
@@ -13,10 +17,18 @@
       "tooltip-format": "{ipaddr}"
     },
     "pulseaudio": {
+      "format": "{volume}% {icon}",
+      "format-muted": "",
+      "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", ""]
+      },
       "scroll-step": 1,
-      "format": "{icon} {volume}%{format_source}",
-      "format-muted": "{format_source}",
-      "format-source": "{volume}%",
       "on-click": "pavucontrol"
     },
     "sway/window": {
