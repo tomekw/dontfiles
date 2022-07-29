@@ -1,13 +1,14 @@
 * {
+  font-family: "JetBrains Mono NL Light";
   border: none;
   border-radius: 0;
-  font-size: 12px;
-  min-height: 25px;
+  font-size: 14px;
+  min-height: 32px;
 }
 
 window#waybar {
-  background: #222;
-  border-bottom: 1px solid #000;
+  background: #2E3440;
+  border-bottom: 2px solid #000;
   color: white;
 }
 
@@ -24,12 +25,14 @@ window#waybar {
 }
 
 #custom-clock,
+#custom-lock,
+#custom-poweroff,
 #custom-weather,
 #pulseaudio,
 #mode,
 #network.wifi {
-  padding: 0 5px;
-  margin: 0 5px;
+  padding: 0 4px;
+  margin: 0 4px;
 }
 
 #mode {

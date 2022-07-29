@@ -53,3 +53,24 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+;;(use-package! doom-parents)
+
+(map!
+ :leader
+ (:prefix-map ("c" . "code")
+  (:prefix ("p" . "parentheses")
+   :desc "wrap round" "(" #'sp-wrap-round
+   :desc "wrap square" "[" #'sp-wrap-square
+   :desc "wrap curly" "{" #'sp-wrap-curly
+   :desc "kill sexp" "d" #'sp-kill-sexp
+   :desc "copy sexp" "y" #'sp-copy-sexp
+   :desc "raise" "r" #'sp-raise-sexp
+   :desc "move forward sexp" "w" #'sp-forward-sexp
+   :desc "move to the next sexp" "n" #'sp-next-sexp
+   (:prefix (">" . "right side")
+    :desc "push" ")" #'sp-forward-slurp-sexp
+    :desc "pull" "(" #'sp-backward-barf-sexp)
+   (:prefix ("<" . "left side")
+    :desc "pull" ")" #'sp-forward-barf-sexp
+    :desc "push" "(" #'sp-backward-slurp-sexp))))

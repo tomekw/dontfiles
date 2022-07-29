@@ -2,10 +2,20 @@
   "layer": "top",
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["sway/window"],
-    "modules-right": ["custom/weather", "pulseaudio", "network#wifi", "custom/clock"],
+    "modules-right": ["custom/weather", "pulseaudio", "network#wifi", "custom/clock", "custom/lock", "custom/poweroff"],
     "custom/clock": {
       "exec": "date +'%Y-%m-%d %H:%M:%S'",
       "interval": 1
+    },
+    "custom/lock": {
+       "tooltip": "Lock screen",
+       "format": "",
+       "on-click": "swaylock -i $HOME/Pictures/Wallpapers/surface_laptop_3_4k.jpg"
+    },
+    "custom/poweroff": {
+       "tooltip": "Shutdown",
+       "format": "",
+       "on-click": "loginctl poweroff"
     },
     "custom/weather": {
       "exec": "curl 'https://wttr.in/?format=1'",
@@ -13,11 +23,14 @@
     },
     "network#wifi": {
       "interface": "wlp6s0",
-      "format-wifi": "{essid} ({signalStrength}%)",
+      "format-wifi": "{icon} {essid} ({signalStrength}%)",
+      "format-icons": {
+      "wifi": [""],
+       },
       "tooltip-format": "{ipaddr}"
     },
     "pulseaudio": {
-      "format": "{volume}% {icon}",
+      "format": "{icon} {volume}%",
       "format-muted": "",
       "format-icons": {
         "headphone": "",
@@ -33,5 +46,5 @@
     },
     "sway/window": {
       "max-length": 50
-    },
+    }
 }

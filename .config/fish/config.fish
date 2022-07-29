@@ -1,6 +1,8 @@
 set -gx EDITOR nvim
-set -gx PATH ~/bin ~/.emacs.d/bin /usr/local/opt/sqlite/bin /usr/local/opt/node@16/bin /usr/local/bin /usr/bin /bin /usr/sbin /sbin
+set -gx PATH ~/bin ~/.emacs.d/bin /usr/local/opt/sqlite/bin /usr/lib/psql14/bin /usr/local/bin /usr/bin /bin /usr/sbin /sbin
 set -gx MOZ_ENABLE_WAYLAND 1
+
+source ~/.asdf/asdf.fish
 
 alias dfgit="git --work-tree=$HOME/ --git-dir=$HOME/dontfiles"
 alias vim="nvim"
